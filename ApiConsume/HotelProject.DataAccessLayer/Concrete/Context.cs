@@ -7,7 +7,7 @@ public class Context : DbContext
 {
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        optionsBuilder.UseNpgsql("Host=localhost;Port=5433;Database=mydatabase;Username=myuser;Password=mypassword;");
+        optionsBuilder.UseNpgsql("Host=localhost;Port=5432;Database=apidb;Username=postgres;Password=mysecretpassword");
     }
 
     public DbSet<Room> Rooms { get; set; }
