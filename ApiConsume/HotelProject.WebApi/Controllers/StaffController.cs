@@ -1,6 +1,7 @@
 using BusinessLayer.Abstract;
 using HotelProject.EntityLayer.Concrete;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace HotelProject.WebApi.Controllers;
 
@@ -29,7 +30,7 @@ public class StaffController : ControllerBase
         return Ok();
     }
     
-    [HttpDelete]
+    [HttpDelete("{id}")]
     public IActionResult DeleteStaff(int id)
     {
         var values = _staffService.TGetByID(id);

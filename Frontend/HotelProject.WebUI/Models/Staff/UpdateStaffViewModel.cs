@@ -1,6 +1,6 @@
-namespace HotelProject.EntityLayer.Concrete;
+namespace HotelProject.WebUI.Models.Staff;
 
-public class Staff
+public class UpdateStaffViewModel
 {
     public int StaffID { get; set; }
     public string Name { get; set; }

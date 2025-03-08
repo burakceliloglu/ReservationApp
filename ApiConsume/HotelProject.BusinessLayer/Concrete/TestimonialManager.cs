@@ -4,11 +4,11 @@ using HotelProject.EntityLayer.Concrete;
 
 namespace BusinessLayer.Concrete;
 
-public class TestimonialService: ITestimonialService
+public class TestimonialManager: ITestimonialService
 {
     private readonly ITestimonialDal _testimonialDal;
 
-    public TestimonialService(ITestimonialDal testimonialDal)
+    public TestimonialManager(ITestimonialDal testimonialDal)
     {
         _testimonialDal = testimonialDal;
     }
